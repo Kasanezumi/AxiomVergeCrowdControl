@@ -8,3 +8,6 @@ main.pyを実行で処理が動作します
 動作確認としてDonation Trackerからの情報を用いずに実施したい場合には<br>
 Demo_RandomAction_SoftCC.pyを実行すれば<br>
 ランダムなアクションを実施することが出来ます
+
+# デモンストレーション動画
+https://youtu.be/t1-1wlzFs9s
