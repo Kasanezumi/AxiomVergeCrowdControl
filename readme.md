@@ -11,3 +11,7 @@ Demo_RandomAction_SoftCC.pyを実行すれば<br>
 
 # デモンストレーション動画
 https://youtu.be/t1-1wlzFs9s
+
+# 関連資料
+[Axiom Verge クラウドコントロール](https://docs.google.com/document/d/1vtbHQHmhWumF2uDOzmLOhHhpjvcdDNkKQfYTIXVcPkc/edit?usp=sharing) <br>
+[Axiom Verge クラウドコントロール コマンドリスト](https://docs.google.com/document/d/1YEccnJIokikXjKm4yzV_PTUuXI7gYnmbZkLKCHsKuW8/edit?usp=sharing)

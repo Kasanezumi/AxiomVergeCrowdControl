@@ -50,6 +50,7 @@ def DecideAction(ActionName, Amount):
     elif ActionName == "無敵時間":
         Decide_GodMode(Amount)
     # 武器変更（10種類）
+    # 【改修案】この数値を小文字でも大文字でも対応できるようにしたい
     elif ActionName == "武器変更1":
         Decide_WeaponChange(Amount, 1)
     elif ActionName == "武器変更2":
