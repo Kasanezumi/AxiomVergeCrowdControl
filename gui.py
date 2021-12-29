@@ -48,27 +48,27 @@ label_WeaponChange_price.pack(expand=True)
 
 
 def set_label_next_action_time(text):
-    print("setLabel開始")
+    # print("setLabel開始")
     label_next_action_time["text"] = text
 
 
 def set_label_now_action(text):
-    print("setLabel開始")
+    # print("setLabel開始")
     label_now_action["text"] = text
 
 
 def set_label_next_KillPlayer_price(text):
-    print("setLabel開始")
+    # print("setLabel開始")
     label_next_KillPlayer_price["text"] = text
 
 
 def set_label_next_GodMode_price(text):
-    print("setLabel開始")
+    # print("setLabel開始")
     label_next_GodMode_price["text"] = text
 
 
 def set_label_WeaponChange_price(text):
-    print("setLabel開始")
+    # print("setLabel開始")
     label_WeaponChange_price["text"] = text
 
 

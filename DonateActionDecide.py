@@ -4,6 +4,7 @@ import threading
 import time
 import ActionSend
 import gui
+import random
 
 KillPlayer_price: int = 1000
 GodMode_price: int = 100
@@ -44,6 +45,28 @@ def Decide_WeaponChange(Amount, WeaponNum):
         logging.info("武器変更：" + weapon_kinds)
 
 
+def Decide_RandomAction():
+    RandomActionList = ["KillPlayer",
+                        "GodMode",
+                        "Weapon1",
+                        "Weapon2",
+                        "Weapon3",
+                        "Weapon4",
+                        "Weapon5",
+                        "Weapon6",
+                        "Weapon7",
+                        "Weapon8",
+                        "Weapon9",
+                        "Weapon0",
+                        ]
+
+    action = random.choices(RandomActionList, k=1, weights=[5, 5, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10])
+    print("実施ランダムアクション：")
+    print(action[0])
+
+    action_que.put(action[0])
+
+
 def DecideAction(ActionName, Amount):
     if ActionName == "プレイヤーキル":
         Decide_KillPlayer(Amount)
@@ -72,7 +95,11 @@ def DecideAction(ActionName, Amount):
     elif ActionName == "武器変更0":
         Decide_WeaponChange(Amount, 0)
     else:
-        logging.error("寄付者名に該当する対象アクション無し")
+        # 対象アクション無い場合はランダムアクション実施する設定の場合
+        logging.info("寄付者名に該当する対象アクション無いためランダムアクションを実施")
+        Decide_RandomAction()
+
+        # logging.error("寄付者名に該当する対象アクション無し")
 
 
 # アクションキューから取り出して処理部分に渡すループ処理
